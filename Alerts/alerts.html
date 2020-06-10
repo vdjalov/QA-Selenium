@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My Alerts</title>
+</head>
+<style>
+    #alert {
+        margin-left: 100px;
+        margin-top: 100px;
+        padding: 10px;
+        background-color: blueviolet;
+        color: cornsilk;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    #popWindow {
+	   	margin-left: 100px;
+	   	margin-top: 100px;
+        padding: 10px;
+        background-color: blueviolet;
+        color: cornsilk;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+
+    <button onclick="alertBox()" id="alert">Try Alert Message Box</button>
+	<button onclick="popUp()" id="popWindow">Try Pop Up</button>
+
+    <script>
+        function alertBox() {
+        	alert("Hello! I am an alert box!");
+        }
+    </script>
+    
+    <script>
+		function popUp() {
+		  let myWindow = window.open("", "", "width=500,height=400");
+		  myWindow.document.write("<p>This is a pop up msg window for testing purposes only!</p>");
+		}
+	</script>
+
+</body>
+</html>
